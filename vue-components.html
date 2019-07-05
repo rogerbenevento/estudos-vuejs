@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>School of Net - Vue Component</title>
+</head>
+<body>
+
+    <div id="app">
+        <contar></contar>
+        <nome></nome>
+        <email></email>
+    </div>
+
+    <!-- development version, includes helpful console warnings -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+
+    <script>
+        Vue.component('contar', {
+            template: `
+                <div>
+                    
+                </div>
+            `
+        })
+
+        Vue.component('nome', {
+            template: '<p>Rogério Benevento JR</p>'
+        })
+        
+        Vue.component('email', {
+            template: '<p>rogerio@forepoint.com.br</p>'
+        })
+
+        Vue.component('card', {
+            template: '<div className="card"></div>'
+        })
+
+        new Vue({
+            el: '#app',
+            data: {
+                
+            }
+        })
+    </script>
+</body>
+</html>
